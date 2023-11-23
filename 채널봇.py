@@ -37,7 +37,7 @@ def job():
         return  # 오후 11시부터 오전 6시까지는 작업을 실행하지 않음
     asyncio.create_task(async_job())
 
-schedule.every(1).minutes.do(job)
+schedule.every(30).minutes.do(job)
 #schedule.every(5).seconds.do(job)
 
 async def main():
